@@ -15,14 +15,14 @@ seed = 123456
 const rng = StableRNGs.LehmerRNG(seed)
 
 # ~~~ data ~~~
-bookPath = "myBook.txt"
+bookPath = "allofshakespeare.txt"
 
 # ~~~ weights ~~~
 const distanceEffort = 1 # at 2 distance penalty is squared
 const doubleFingerEffort = 1
 const doubleHandEffort = 1
 
-const fingerCPM = [223, 169, 225, 273, 343, 313, 259, 241] # how many clicks can you do in a minute
+const fingerCPM = [250, 264, 320, 354, 372, 362, 272, 274] # how many clicks can you do in a minute
 meanCPM = mean(fingerCPM)
 stdCPM = std(fingerCPM)
 zScoreCPM = -(fingerCPM .- meanCPM) ./ stdCPM # negative since higher is better
