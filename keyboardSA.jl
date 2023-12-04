@@ -337,7 +337,7 @@ function drawKeyboard(myGenome, id, currentLayoutMap)
         end
 
         if home == 1.0
-            plot!([x], [y], shape=:rect, fillalpha=0.2, linecolor=nothing, color = myColour, label ="", markersize= 16.5 , dpi = 100)
+            plot!([x], [y], shape=:rect, fillalpha=0.2, linecolor=nothing, color = myColour, label ="", markersize= 23 , dpi = 100)
         end
         
         plot!([x - 0.45, x + 0.45, x + 0.45, x - 0.45, x - 0.45], [y - 0.45, y - 0.45, y + 0.45, y + 0.45, y - 0.45], color = myColour, fillalpha = 0.2, label ="", dpi = 100)
